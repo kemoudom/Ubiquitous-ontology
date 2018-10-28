@@ -1,0 +1,441 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#"
+     xml:base="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#containsEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#containsEntity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#containsEntity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Location"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#containsEntity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#CPSEntity"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#containsLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#containsLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#containsLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#OrganisationalEntity"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#containsLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Location"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasConnectingPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasConnectingPoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasConnectingPoint"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#OrganisationalEntity"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasConnectingPoint"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#ConnectingPoint"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasConnectingResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasConnectingResource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasConnectingResource"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Connection"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasConnectingResource"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Resource"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasConnection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasConnection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasConnection"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#ConnectingPoint"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasConnection"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Location"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasConnection"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Connection"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasDestination -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasDestination">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasDestination"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Connection"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasDestination"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Location"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasDestinationEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasDestinationEntity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasDestinationEntity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#ConnectingPoint"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasDestinationEntity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#OrganisationalEntity"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasEntityResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasEntityResource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasEntityResource"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#CPSEntity"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasEntityResource"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Resource"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Connection"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasOrigin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Location"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasOriginEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasOriginEntity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasOriginEntity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#ConnectingPoint"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#hasOriginEntity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#OrganisationalEntity"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#isChildEntityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#isChildEntityOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#isChildEntityOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#OrganisationalEntity"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#isChildEntityOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#OrganisationalEntity"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#isParentEntityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#isParentEntityOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#isParentEntityOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#OrganisationalEntity"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#isParentEntityOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#OrganisationalEntity"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#isUnderOrganisationalEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#isUnderOrganisationalEntity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#isUnderOrganisationalEntity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Location"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#isUnderOrganisationalEntity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#OrganisationalEntity"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#supportActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#supportActivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#supportActivity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#CPSEntity"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#supportActivity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#PotentialActivity"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#CPSEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#CPSEntity">
+        <rdfs:comment>An entity located in a ubiquitous environment</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#ConnectingPoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#ConnectingPoint">
+        <rdfs:comment>A point that connects 2 different organisational entities</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Connection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Connection">
+        <rdfs:comment>A link from a location to another</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#CyberPhysicalEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#CyberPhysicalEntity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#PhysicalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An entity that is cybernetic and occupies a physical space</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#CyberPhysicalSocialEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#CyberPhysicalSocialEntity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#CyberPhysicalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#SocialEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An entity that is cybernetic, social, and occupies a physical space</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Location">
+        <rdfs:comment>A location in a ubiquitous environment</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#OrganisationalEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#OrganisationalEntity">
+        <rdfs:comment>An organisational entity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#PhysicalEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#PhysicalEntity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#CPSEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An entity occupying a physical space</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#PotentialActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#PotentialActivity">
+        <rdfs:comment>An activity that can be carried out in a ubiquitous environment</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#Resource">
+        <rdfs:comment>A resource providing information about a CPS entity or a connection</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#SocialEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#SocialEntity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oudom/ontologies/2018/9/ueao#CPSEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An entity possessing social capabilities</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
